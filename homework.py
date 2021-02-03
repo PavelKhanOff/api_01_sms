@@ -1,8 +1,8 @@
+import logging
 import os
 import time
-import logging
+
 import requests
-from logging.handlers import RotatingFileHandler
 from dotenv import load_dotenv
 from twilio.rest import Client
 
