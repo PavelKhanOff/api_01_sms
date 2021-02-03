@@ -43,7 +43,7 @@ def get_status(user_id):
         logging.exception(msg='Ошибка в работе отправки сообщения!')
 
 
-def sms_sender(sms_text):
+def send_sms(sms_text):
     message = (CLIENT.messages.create(
         body=sms_text, from_=NUMBER_FROM, to=NUMBER_TO))
     return message.sid
